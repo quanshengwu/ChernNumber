@@ -1,7 +1,7 @@
 
    subroutine chern
 
-      use mpi
+     !use mpi
       use para
       implicit none
 
@@ -36,10 +36,10 @@
          Seed= Seed+ idis
          do i=1, omeganum
             Ef= omega(i)
-           !call chern_realspace( Ef, res)
+            call chern_realspace( Ef, res)
            !call chern_prodan( Ef, res)
            !call chern_kubo( Ef, res)
-            call chern_streda( Ef, res)
+           !call chern_streda( Ef, res)
             chernnumber(i, idis)= res
             if (cpuid.eq.0)write(*, '(i,2f16.8)')idis, Ef, res
          enddo

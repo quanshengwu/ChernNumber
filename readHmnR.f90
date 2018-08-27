@@ -1,4 +1,3 @@
-! > haldane's model
    subroutine readHmnR()
 
       use para

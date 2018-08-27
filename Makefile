@@ -11,7 +11,7 @@ FC  = mpif90 # -warn all -check all -traceback -pg
 CPPFLAGS= #-D__CUDA__  -D__CULA__ # -D__MAGMA__
 FLAGS = -fpp -O3 -nogen-interface $(CPPFLAGS) # -check all
 
- LIB = -L. -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread
+ LIB = -L/opt/intel/mkl/lib -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread
 #LIB = -L. -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -liomp5 -lpthread
 
 

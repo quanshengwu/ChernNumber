@@ -8,7 +8,7 @@
 !--------+--------+--------+--------+--------+--------+--------+------!
 
   program main
-     use mpi
+    !use mpi
      use para
 
      implicit none

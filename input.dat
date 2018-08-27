@@ -1,0 +1,13 @@
+chernNy10w1.dat    output file name
+0           gpu device
+100 1       omega number, numB
+-2.0  2.0   omega interval
+0.0 1.0     B interval
+simple      disorder type look at disorder.f90
+0.0   0.0   disorder rate,disorder_strength
+1           Number of disorder configuration
+89401       Seed, an integer for random number generator
+10          Nx
+10 1        Ny, Np=1
+1           Soc
+1e-9        eta

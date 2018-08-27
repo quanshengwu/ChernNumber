@@ -1,7 +1,8 @@
   module para
-     use mpi
+!    use mpi
 
      implicit none
+     include 'mpif.h'
 
 ! output file name
      character*40 :: filename
